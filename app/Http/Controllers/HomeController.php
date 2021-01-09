@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
 
-
 class HomeController extends Controller
 {
     /**
@@ -49,6 +48,8 @@ class HomeController extends Controller
     {
          return view('push');
     }
+
+     
 
     //プロフィール画面を表示
     public function showMyProfile()

@@ -5064,8 +5064,9 @@ input[type=button].btn-block {
   color: #272343;
   border: solid 3px #bae8e8;
   background-color: #bae8e8;
-
-
+}
+.btn-block{
+  margin-top: 10px;
 }
 
 .card-header:first-child {
@@ -11000,4 +11001,10 @@ footer{
 }
 .out-container{
   text-align: center;
+}
+
+.myImg{
+  width:320px;
+  height:300px;
+  border-radius: 50%;
 }

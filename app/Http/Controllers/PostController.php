@@ -19,7 +19,9 @@ class PostController extends Controller
 
     //DBに登録し、投稿完了画面へ
     public function post(Request $request){
-             $user = Auth::user();
+             //$user = Auth::user();
+
+             $user=User::find($request->user_id);
 
         //todoがpostされた時
         if($request->has('todo')){
@@ -28,7 +30,7 @@ class PostController extends Controller
              $todoPost = array(
              'todo' => $request->input('todo'),
         );
-         return view('post.send');
+         return view('post.send',['user' => $user]);
 
         //diaryがpostされた時
         }elseif($request->has('daily')){
