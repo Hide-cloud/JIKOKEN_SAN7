@@ -26,6 +26,7 @@ class UploadSizeCheckMiddleware
         }                
         return $next($request);
     }
+
     
     public function return_bytes($val) {
         
